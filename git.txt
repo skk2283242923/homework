@@ -1,0 +1,34 @@
+//安装git
+//进行配置
+git config --global user.name "skk2283242923"
+git config --global user.email "2283242923@qq.com"
++++基本使用
+//创建一个空目录，并进到该目录里面
+1，git init //初始化仓库
+//初始化之后，git后面会显示一个（master）的标志，默认创建的主分支
+//2，创建一个文件，里面写上东西
+//git add 文件名称，把文件添加到git的暂存区
+//git add . 把当前文件夹里面的所有文件都添加进去
+2，git add readme.txt
+//git commit -m "描述":提交到master分支上去 
+3，git commit -m "这是第一次提交的东西"
++++版本回退
+//git status 测试命令，查看已提交的东西
+4，git status
+//git diff 查看已修改的文件和原本的文件有啥区别 
+5，git diff readme.txt
+//git log：查看提交日志
+6，git log
+//用HEAD表示当前版本，则HEAD^表示上一个版本，HEAD~n:表示上多少个版本
+7， git reset--hard HEAD^
+//回到哪一个版本
+8,git reflog
+//用来记录之前的每一次操作
+9，git restore readme.txt
+//返回提交，删除到上一次提交，（修改了没有提交到暂存区）
+10，git restore --staged readme.txt
+//删除（已经提交到暂存区了）
+11，git reset --hard HEAD^
+    //删除（已经提交到版本库了）
+12，rm demo.txt//删除文件
+13，git rm demo.txt//确定删除
