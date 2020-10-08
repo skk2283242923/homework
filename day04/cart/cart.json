@@ -1,0 +1,17 @@
+{
+  "products": [
+    {
+      "title": "商品名称",
+      "price": "123",
+      "imgSrc": "img/3.jpg",
+      "id": 1
+    },
+    {
+      "title": "",
+      "price": "",
+      "imgSrc": "img/3.jpg",
+      "id": 2
+    }
+  ],
+  "carts": []
+}
